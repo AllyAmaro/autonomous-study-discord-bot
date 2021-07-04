@@ -1,10 +1,14 @@
+from dotenv import load_dotenv
+load_dotenv()
+
 import discord
 import random
 from discord import Embed
 import asyncio
 import time
+import os
 
-TOKEN = 'ODU0ODA4OTI2MTUwNzIxNjI3.YMpU2Q.ZVkCRHh36pm2Lqz7arDoEVbu1Zo'
+TOKEN = os.environ.get("DISCORD_TOKEN")
 
 client = discord.Client()
 
